@@ -1,0 +1,44 @@
+{
+  "name": "videoconf-backend",
+  "version": "1.0.0",
+  "description": "Backend for Video Conferencing Application",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "setup": "node setup.js",
+    "db:migrate": "node src/database/migrate.js",
+    "db:seed": "node src/database/seed.js",
+    "db:reset": "node src/database/reset.js",
+    "create-users": "node src/scripts/createUsers.js",
+    "cleanup-dummy-users": "node src/scripts/cleanupDummyUsers.js"
+  },
+  "keywords": [
+    "video-conferencing",
+    "nodejs",
+    "express",
+    "postgresql"
+  ],
+  "author": "VideoConf Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
