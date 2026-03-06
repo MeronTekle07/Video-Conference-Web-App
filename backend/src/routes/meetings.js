@@ -97,8 +97,8 @@ const leaveMeetingValidation = [
 // All routes require authentication
 router.use(authenticateToken);
 
-// GET /api/meetings - Get all meetings for the authenticated user
-router.get('/', meetingController.getMyMeetings);
+// GET /api/meetings/my - Get all meetings for the authenticated user
+router.get('/my', meetingController.getMyMeetings);
 
 // GET /api/meetings/:id - Get meeting by ID
 router.get('/:id', meetingController.getMeetingById);

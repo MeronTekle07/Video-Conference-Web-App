@@ -1,6 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const userController = require('../controllers/userController');
+const authController = require('../controllers/authController');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 
 const router = express.Router();
@@ -88,8 +89,14 @@ const changePasswordValidation = [
     .withMessage('Password must be at least 6 characters long')
 ];
 
-// Routes - All require authentication and admin privileges
-router.use(authenticateToken, requireAdmin);
+// Routes - All require authentication
+router.use(authenticateToken);
+
+// GET /api/users/profile - Get current user profile
+router.get('/profile', userController.getProfile || authController.getProfile);
+
+// Routes below this require admin privileges
+router.use(requireAdmin);
 
 // GET /api/users - Get all users
 router.get('/', userController.getAllUsers);
