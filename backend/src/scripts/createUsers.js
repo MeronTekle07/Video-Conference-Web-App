@@ -12,6 +12,81 @@ const users = [
     title: 'System Administrator',
     department: 'IT',
     phone: '+1 (555) 123-4567'
+  },
+  {
+    name: 'Super Admin',
+    email: 'superadmin@example.com',
+    password: 'password',
+    role: 'admin',
+    title: 'Global Administrator',
+    department: 'Executive',
+    phone: '+1 (555) 000-0000'
+  },
+  // Supervisor users
+  {
+    name: 'Sarah Johnson',
+    email: 'sarah.johnson@example.com',
+    password: 'password',
+    role: 'supervisor',
+    title: 'Team Lead',
+    department: 'Engineering',
+    phone: '+1 (555) 234-5678'
+  },
+  {
+    name: 'Mike Chen',
+    email: 'mike.chen@example.com',
+    password: 'password',
+    role: 'supervisor',
+    title: 'Project Manager',
+    department: 'Product',
+    phone: '+1 (555) 345-6789'
+  },
+  {
+    name: 'Emily Davis',
+    email: 'emily.davis@example.com',
+    password: 'password',
+    role: 'supervisor',
+    title: 'Operations Manager',
+    department: 'Operations',
+    phone: '+1 (555) 456-7890'
+  },
+  // Auditor users
+  {
+    name: 'Alex Wilson',
+    email: 'alex.wilson@example.com',
+    password: 'password',
+    role: 'auditor',
+    title: 'Compliance Officer',
+    department: 'Legal',
+    phone: '+1 (555) 567-8901'
+  },
+  {
+    name: 'Lisa Brown',
+    email: 'lisa.brown@example.com',
+    password: 'password',
+    role: 'auditor',
+    title: 'Security Auditor',
+    department: 'Security',
+    phone: '+1 (555) 678-9012'
+  },
+  // Regular Users
+  {
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    password: 'password',
+    role: 'user',
+    title: 'Software Engineer',
+    department: 'Engineering',
+    phone: '+1 (555) 789-0123'
+  },
+  {
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    password: 'password',
+    role: 'user',
+    title: 'UX Designer',
+    department: 'Design',
+    phone: '+1 (555) 890-1234'
   }
 ];
 
